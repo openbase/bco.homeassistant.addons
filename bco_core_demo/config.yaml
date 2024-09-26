@@ -1,0 +1,22 @@
+name: "BCO Core Demo"
+description: "Lets try to demo!"
+url: "https://www.openbase.org"
+version: dev
+slug: "bco-core-demo"
+arch:
+  - aarch64
+  - amd64
+startup: application
+ports:
+  13781/tcp: 13781
+boot: manual
+image: openbaseorg/bco-demo
+environment:
+  BCO_OPTIONS: "--host local-bco-middleware --port 13780"
+# watchdog: tcp://[HOST]:13781
+watchdog: http://[HOST]:[PORT:13781]/graphql
+healthcheck:
+  test: ["CMD-SHELL", "nc -z -v -w5 homeassistant.local 13781 || exit 1"]
+  interval: "30s"
+  timeout: "10s"
+  retries: 3

@@ -1,0 +1,13 @@
+name: "BCO Middleware"
+description: "Mosquitto MQTT Broker for BCO"
+version: "0.1.0"
+slug: "bco-middleware"
+arch:
+  - aarch64
+  - amd64
+  - armv7
+  - i386
+startup: services
+ports:
+  13780/tcp: 13780
+boot: manual

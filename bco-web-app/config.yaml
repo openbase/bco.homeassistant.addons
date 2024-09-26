@@ -1,0 +1,13 @@
+name: "BCO WebApp"
+description: "BCO Flutter Multi Platform Client Application"
+url: "https://basecubeone.org/docs/user/howto/setup-docker#deploy-the-bco-webapp-docker"
+version: latest
+slug: "bco_webapp"
+arch:
+  - aarch64
+  - amd64
+startup: application
+ports:
+  80/tcp: 80
+boot: manual
+image: opaal/bco-ui-albiorix
