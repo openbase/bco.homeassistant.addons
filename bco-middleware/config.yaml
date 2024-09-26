@@ -1,5 +1,5 @@
 name: "BCO Middleware"
-description: "Mosquitto MQTT Broker for BCO"
+description: "Mosquitto MQTT Broker served as middleware for BCO"
 version: "0.1.0"
 slug: "bco-middleware"
 arch:
