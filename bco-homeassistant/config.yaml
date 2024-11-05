@@ -13,7 +13,6 @@ boot: manual
 image: openbaseorg/bco-device-homeassistent
 environment:
   BCO_OPTIONS: "--host local-bco-middleware --port 13780"
-# watchdog: tcp://[HOST]:13781
 watchdog: http://[HOST]:[PORT:13781]/graphql
 healthcheck:
   test: ["CMD-SHELL", "nc -z -v -w5 homeassistant.local 13781 || exit 1"]
