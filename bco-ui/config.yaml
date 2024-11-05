@@ -1,8 +1,8 @@
-name: "BCO WebApp"
-description: "BCO Flutter Multi Platform Client Application"
+name: "BCO UI"
+description: "BCO UI Webapp"
 url: "https://basecubeone.org/docs/user/howto/setup-docker#deploy-the-bco-webapp-docker"
 version: latest
-slug: "bco_webapp"
+slug: "bco-ui"
 arch:
   - aarch64
   - amd64
