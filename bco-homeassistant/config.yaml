@@ -9,7 +9,6 @@ arch:
 startup: application
 ports:
   13781/tcp: 13781
-boot: manual
 image: openbaseorg/bco-device-homeassistent
 environment:
   BCO_OPTIONS: "--host local-bco-middleware --port 13780"

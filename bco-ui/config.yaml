@@ -9,5 +9,4 @@ arch:
 startup: application
 ports:
   80/tcp: 80
-boot: manual
 image: opaal/bco-ui-albiorix
